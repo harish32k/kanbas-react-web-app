@@ -1,0 +1,244 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+.content-holder {
+    min-height: 100vh;
+    flex-basis: 100%;
+    padding-top: 1.5em;
+}
+
+.kanbas-sidebar {
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    min-width: 75px;
+    max-width: 85px;
+    /* padding: 5px; */
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.logo-img {
+    height: 2.5em;
+    /* margin: auto; */
+}
+
+.sidebar-flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-link {
+    color: inherit;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.sidebar-link:hover {
+    color: inherit;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.sidebar-icon {
+    color: crimson;
+    font-size: 1.5em;
+}
+
+.sidebar-text {
+    color: white;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.sidebar-item {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.account-icon {
+    color: rgb(198, 198, 198);
+}
+
+.selected-item {
+    background-color: white;
+}
+
+.selected-text {
+    color: crimson;
+}
+
+#menu-icon {
+    color: crimson;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+
+#name-header {
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+
+#account-navbar {
+    list-style-type: none;
+}
+
+.account-navbar-column {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.acc-link {
+    color: crimson;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.acc-link:hover {
+    color: crimson;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+#account-navbar>li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.selected-navbar {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 0.2em;
+}
+
+.selected-navbar:hover {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 0.2em;
+}
+
+#profile-pic {
+    width: 7em;
+    border: 3px solid rgb(194, 194, 194);
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+ul.list-group li.list-group-item {
+    border-radius: 0;
+    /* Remove rounded corners */
+    padding-bottom: 5px;
+    padding-top: 15px;
+
+}
+
+ul.list-group li.green-border {
+    border-left: 3px solid darkgreen;
+    /* Remove rounded corners */
+}
+
+.list-group a {
+    color: black;
+    text-decoration: none;
+    /* Remove underline */
+
+}
+
+.list-group a:hover {
+    color: black;
+    text-decoration: underline;
+    /* Remove underline */
+}
+
+.list-group-item>a {
+    font-weight: 500;
+}
+
+.list-group-item>p>span {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.list-group-item-secondary>p {
+    font-weight: 500;
+}
+
+ul.list-group {
+    margin-bottom: 20px;
+}
+
+.list-menu>span {
+    border: 1px solid gray;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 15px;
+}
+
+.list-menu>i {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.fa-pen-to-square {
+    color: darkgreen;
+}
+
+.list-group-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.breadcrumb-item+.breadcrumb-separator::before {
+    content: ">";
+    margin: 0 0.3rem;
+}
+
+.breadcrumb {
+    display: inline-block;
+    margin-bottom: 0;
+    /* Remove default margin */
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.breadcrumb-item>a {
+    color: crimson;
+}
+
+.breadcrumb-item>a:hover {
+    color: crimson;
+}
+
+.td input {
+    width: 80%;
+}

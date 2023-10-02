@@ -1,155 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
+
 <body>
-    <table width="100%">
-        <tbody>
-            <tr>
-            
-                <td valign="top">
-                <ul>
-                    <li><a href="/kanbas/profile">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/kanbas/courses.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                    </ul>                    
-                </td>
-                <td valign="top">
-                <ul>
-                    <li><a href="/kanbas/home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="/kanbas/assignments">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="/kanbas/grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="/kanbas/course-settings.html">Settings</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                
-                <input type="text" placeholder="Search for Assignments">
-                <button>Group</button>
-                <button>Assignment</button>
-                <select>
-                    <option>Edit Assignment Dates</option>
-                </select>
-                <hr />
-                
-                <br>
-                
-                <br>
+    <div class="flex-container">
+        <div class="kanbas-sidebar flex-box">
+            <div class="sidebar-item">
+                <div class="sidebar-flex-item">
+                    <img class="logo-img" src="../../images/MONOGRAM-red-2-1.svg" alt="Northeastern logo">
+                </div>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="/kanbas/profile/">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-regular fa-user sidebar-icon account-icon"></i>
+                        <span class="sidebar-text"> Account</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="/kanbas/dashboard.html">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-solid fa-gauge sidebar-icon"></i>
+                        <span class="sidebar-text"> Dashboard</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item selected-item">
+                <a class="sidebar-link" href="/kanbas/home.html">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-solid fa-book sidebar-icon"></i>
+                        <span class="sidebar-text selected-text"> Courses</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-regular fa-calendar-days sidebar-icon"></i>
+                        <span class="sidebar-text">Calendar</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-solid fa-inbox sidebar-icon"></i>
+                        <span class="sidebar-text">Inbox</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-regular fa-clock sidebar-icon"></i>
+                        <span class="sidebar-text">History</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-solid fa-tv sidebar-icon"></i>
+                        <span class="sidebar-text">Studio</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-solid fa-right-from-bracket sidebar-icon"></i>
+                        <span class="sidebar-text">Commons</span>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <div class="sidebar-flex-item">
+                        <i class="fa-regular fa-circle-question sidebar-icon"></i>
+                        <span class="sidebar-text">Help</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content-holder flex-box">
+            <div class="container-fluid">
 
-                <h2 style="display: inline;">ASSIGNMENTS 40% of Total </h2> 
-                <select>
-                    <option>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move to...</option>
-                    <option>Send to...</option>
-                    <option>Copy to...</option>
-                    <option>Share to commons</option>
-                </select><br>
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-                <ul>
-                    <li><a href="/kanbas/assignments/edit.html">A1 - ENV+HTML</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="/kanbas/assignments/edit.html">A2 - CSS+BOOTSTRAP</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="/kanbas/assignments/edit.html">A3 - JS+REACT</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="/kanbas/assignments/edit.html">A4 - STATE+REDUX</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="/kanbas/assignments/edit.html">A5 - NODE+SESSION</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="/kanbas/assignments/edit.html">A6 - MONGO+MONGOOSE</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                </ul>
+                        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; ">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/kanbas/home.html">CS5610 11550 Web Development SEC 01 Fall 2023 [VTL-2-OL]</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-2 account-navbar-column">
+                        <ul id="account-navbar">
+                            <li><a href="/kanbas/home.html" class="acc-link">Home</a></li>
+                            <li><a href="#" class="acc-link">Modules</a></li>
+                            <li><a href="#" class="acc-link">Piazza</a></li>
+                            <li><a href="#" class="acc-link">Zoom Meetings</a></li>
+                            <li><a href="/kanbas/assignments" class="acc-link selected-navbar">Assignments</a></li>
+                            <li><a href="#" class="acc-link">Quizzes</a></li>
+                            <li><a href="/kanbas/grades.html" class="acc-link">Grades</a></li>
+                            <li><a href="#" class="acc-link">People</a></li>
+                            <li><a href="#" class="acc-link">Panopto Video</a></li>
+                            <li><a href="#" class="acc-link">Discussions</a></li>
+                            <li><a href="#" class="acc-link">Announcements</a></li>
+                            <li><a href="#" class="acc-link">Pages</a></li>
+                            <li><a href="#" class="acc-link">Files</a></li>
+                            <li><a href="#" class="acc-link">Rubrics</a></li>
+                            <li><a href="#" class="acc-link">Outcomes</a></li>
+                            <li><a href="#" class="acc-link">Collaborations</a></li>
+                            <li><a href="#" class="acc-link">Syllabus</a></li>
+                            <li><a href="/kanbas/course-settings.html" class="acc-link">Settings</a></li>
+                        </ul>
+                    </div>
 
-                <h2 style="display: inline;">QUIZZES 10% of Total </h2> 
-                <select>
-                    <option>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move to...</option>
-                    <option>Send to...</option>
-                    <option>Copy to...</option>
-                    <option>Share to commons</option>
-                </select><br>
 
-                <ul>
-                    <li><a href="#">Q1 - HTML</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="#">Q2 - CSS</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="#">Q3 - JS,ES6</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="#">Q4 - NODE</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="#">Q5 - MONGO</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                </ul>
-                
+                    <div class="col-8">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <input type="text" class="form-control w-250" placeholder="Search for Assignments">
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">+ Group</button>
+                                <button type="button" class="btn btn-danger">+ Assignment</button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-ellipsis-vertical"></i></button>
+                            </div>
+                        </div>
+                        <hr />
 
-                <h2 style="display: inline;">EXAMS 20% of Total </h2> 
-                <select>
-                    <option>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move to...</option>
-                    <option>Send to...</option>
-                    <option>Copy to...</option>
-                    <option>Share to commons</option>
-                </select><br>
-                <ul>
-                    <li><a href="#">Midterm</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                    <li><a href="#">Final</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                </ul>
-                
-                <h2 style="display: inline;">PROJECT 30% of Total </h2> 
-                <select>
-                    <option>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move to...</option>
-                    <option>Send to...</option>
-                    <option>Copy to...</option>
-                    <option>Share to commons</option>
-                </select><br>
-                <ul>
-                    <li><a href="#">Project</a>
-                    <p><a href="#">Multiple Modules</a> | Not available</p></li>
-                </ul>
-                
-                </td>
+                        <ul class="list-group">
 
-            </tr>
-        </tbody>
-    </table>
+                            <li class="list-group-item  list-group-item-secondary d-flex">
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <p>QUIZZES</p>
+                                </div>
+                                <div class="list-menu">
+                                    <span>20% of total</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Q1 - HTML</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Q2 - CSS</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Q3 - JS,ES6</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Q4 - NODE</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Q5 - MONGO</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group">
+
+                            <li class="list-group-item  list-group-item-secondary d-flex">
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <p>ASSIGNMENTS</p>
+                                </div>
+                                <div class="list-menu">
+                                    <span>40% of total</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">A1 - HTML</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">A2 - CSS</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">A3 - JS,ES6</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+                        <ul class="list-group">
+
+                            <li class="list-group-item  list-group-item-secondary d-flex">
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <p>EXAMS</p>
+                                </div>
+                                <div class="list-menu">
+                                    <span>20% of total</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Midterm</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Final Exam</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+                        <ul class="list-group">
+
+                            <li class="list-group-item  list-group-item-secondary d-flex">
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <p>PROJECT</p>
+                                </div>
+                                <div class="list-menu">
+                                    <span>20% of total</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex green-border">
+
+                                <div class="list-icons">
+                                    <span>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i><i
+                                            class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div class="list-content flex-grow-1 ms-2">
+                                    <a href="/kanbas/assignments/edit.html">Project</a>
+                                    <p>
+                                        <span>Week 1 - SETUP. Starting on Monday. September 5th (9/5/2023).
+                                            Module</span><br>
+                                        <span>Due Sep 18, 2023 at 11:59 PM</span>
+                                    </p>
+                                </div>
+                                <div class="list-menu">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

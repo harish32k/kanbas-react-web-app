@@ -1,0 +1,145 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+.content-holder {
+    min-height: 100vh;
+    flex-basis: 100%;
+    padding-top: 1.5em;
+}
+
+.kanbas-sidebar {
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    min-width: 75px;
+    max-width: 85px;
+    /* padding: 5px; */
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.logo-img {
+    height: 2.5em;
+    /* margin: auto; */
+}
+
+.sidebar-flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-link {
+    color: inherit;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.sidebar-link:hover {
+    color: inherit;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.sidebar-icon {
+    color: crimson;
+    font-size: 1.5em;
+}
+
+.sidebar-text {
+    color: white;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.sidebar-item {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.account-icon {
+    color: rgb(198, 198, 198);
+}
+
+.selected-item {
+    background-color: white;
+}
+
+.selected-text {
+    color: crimson;
+}
+
+#name-header {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+#courses-header {
+    font-size: 1.5em;
+}
+
+.card-style {
+    box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.54);
+    margin: 20px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-style a {
+    width: 30px;
+    color: crimson;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+.card-style a:hover {
+    color: crimson;
+    /* Inherit parent color (overrides the blue color) */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.card-icon {
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white; /* Adjust the color as needed */
+}
+
+.card-text {
+    color: rgb(111, 111, 111);
+}
+
+.text-big-card {
+    font-weight: bold;
+}
