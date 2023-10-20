@@ -1,0 +1,107 @@
+[
+    {
+        "_id": "A101",
+        "title": "Propulsion Assignment",
+        "course": "RS101"
+    },
+    {
+        "_id": "A102",
+        "title": "Combustion Analysis",
+        "course": "RS101"
+    },
+    {
+        "_id": "A103",
+        "title": "Nozzle Design Project",
+        "course": "RS101"
+    },
+    {
+        "_id": "A201",
+        "title": "Aerodynamics Quiz",
+        "course": "RS102"
+    },
+    {
+        "_id": "A202",
+        "title": "Flow Analysis",
+        "course": "RS102"
+    },
+    {
+        "_id": "A203",
+        "title": "Heating Analysis",
+        "course": "RS102"
+    },
+    {
+        "_id": "A301",
+        "title": "Structural Design Task",
+        "course": "RS103"
+    },
+    {
+        "_id": "A302",
+        "title": "Orbital Calculations",
+        "course": "RS103"
+    },
+    {
+        "_id": "A303",
+        "title": "Systems Engineering Exam",
+        "course": "RS103"
+    },
+    {
+        "_id": "A104",
+        "title": "Interplanetary Trajectory Analysis",
+        "course": "RS104"
+    },
+    {
+        "_id": "A105",
+        "title": "Space Debris Collision Simulation",
+        "course": "RS104"
+    },
+    {
+        "_id": "A106",
+        "title": "Celestial Mechanics Research Paper",
+        "course": "RS104"
+    },
+    {
+        "_id": "A204",
+        "title": "Stellar Evolution Observations",
+        "course": "RS105"
+    },
+    {
+        "_id": "A205",
+        "title": "Galactic Dynamics Analysis",
+        "course": "RS105"
+    },
+    {
+        "_id": "A206",
+        "title": "Exoplanet Discovery Project",
+        "course": "RS105"
+    },
+    {
+        "_id": "A304",
+        "title": "Satellite Communication Network Design",
+        "course": "RS106"
+    },
+    {
+        "_id": "A305",
+        "title": "Deep Space Communication Challenges",
+        "course": "RS106"
+    },
+    {
+        "_id": "A306",
+        "title": "Quantum Communication Experiment",
+        "course": "RS106"
+    },
+    {
+        "_id": "A404",
+        "title": "Planetary Geology Fieldwork Report",
+        "course": "RS107"
+    },
+    {
+        "_id": "A405",
+        "title": "Planetary Atmosphere Study",
+        "course": "RS107"
+    },
+    {
+        "_id": "A406",
+        "title": "Astrobiology Research Proposal",
+        "course": "RS107"
+    }
+]

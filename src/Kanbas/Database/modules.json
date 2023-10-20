@@ -1,0 +1,128 @@
+[
+    {
+        "_id": "M104",
+        "name": "Thrust Vector Control",
+        "description": "Study of thrust vector control mechanisms and their role in rocket propulsion.",
+        "course": "RS101"
+    },
+    {
+        "_id": "M105",
+        "name": "Propellant Chemistry",
+        "description": "Exploration of different propellant types and their chemical compositions.",
+        "course": "RS101"
+    },
+    {
+        "_id": "M106",
+        "name": "Advanced Combustion Techniques",
+        "description": "Advanced techniques for rocket engine combustion optimization.",
+        "course": "RS101"
+    },
+    {
+        "_id": "M204",
+        "name": "Hypersonic Aerodynamics",
+        "description": "In-depth study of hypersonic aerodynamic characteristics and their applications.",
+        "course": "RS102"
+    },
+    {
+        "_id": "M205",
+        "name": "Wind Tunnel Testing",
+        "description": "Principles and methods of wind tunnel testing for aerodynamic analysis.",
+        "course": "RS102"
+    },
+    {
+        "_id": "M206",
+        "name": "Computational Fluid Dynamics (CFD)",
+        "description": "Introduction to CFD simulations and their use in aerodynamic analysis.",
+        "course": "RS102"
+    },
+    {
+        "_id": "M304",
+        "name": "Spacecraft Thermal Control",
+        "description": "Exploration of spacecraft thermal control systems and heat dissipation techniques.",
+        "course": "RS103"
+    },
+    {
+        "_id": "M305",
+        "name": "Spacecraft Power Systems",
+        "description": "Study of power generation and distribution in spacecraft systems.",
+        "course": "RS103"
+    },
+    {
+        "_id": "M306",
+        "name": "Space Environment Effects",
+        "description": "Understanding the effects of the space environment on spacecraft materials and systems.",
+        "course": "RS103"
+    },
+    {
+        "_id": "M404",
+        "name": "Interplanetary Trajectories",
+        "description": "Analysis of interplanetary trajectory calculations and mission planning.",
+        "course": "RS104"
+    },
+    {
+        "_id": "M405",
+        "name": "Space Debris and Collision Avoidance",
+        "description": "Study of space debris monitoring and collision avoidance strategies in space orbits.",
+        "course": "RS104"
+    },
+    {
+        "_id": "M406",
+        "name": "Celestial Mechanics",
+        "description": "Introduction to celestial mechanics and its role in spacecraft navigation.",
+        "course": "RS104"
+    },
+    {
+        "_id": "M504",
+        "name": "Stellar Evolution",
+        "description": "Exploration of the life cycles of stars and their evolution.",
+        "course": "RS105"
+    },
+    {
+        "_id": "M505",
+        "name": "Galactic Structure and Dynamics",
+        "description": "Study of the structure and dynamics of galaxies in the universe.",
+        "course": "RS105"
+    },
+    {
+        "_id": "M506",
+        "name": "Exoplanets and Planetary Systems",
+        "description": "Introduction to the discovery and study of exoplanets and planetary systems.",
+        "course": "RS105"
+    },
+    {
+        "_id": "M604",
+        "name": "Satellite Communication Systems",
+        "description": "Study of satellite communication systems and their applications.",
+        "course": "RS106"
+    },
+    {
+        "_id": "M605",
+        "name": "Deep Space Communication",
+        "description": "Communication challenges and solutions for deep space missions.",
+        "course": "RS106"
+    },
+    {
+        "_id": "M606",
+        "name": "Quantum Communication in Space",
+        "description": "Exploration of quantum communication technologies in space missions.",
+        "course": "RS106"
+    },
+    {
+        "_id": "M704",
+        "name": "Planetary Geology",
+        "description": "Study of the geological processes and features on planets and moons.",
+        "course": "RS107"
+    },
+    {
+        "_id": "M705",
+        "name": "Planetary Atmospheres",
+        "description": "Exploration of planetary atmospheres and their characteristics.",
+        "course": "RS107"
+    },
+    {
+        "_id": "M706",
+        "name": "Astrobiology and the Search for Extraterrestrial Life",
+        "description": "Introduction to astrobiology and the search for life beyond Earth.",
+        "course": "RS107"
+    }
+]
