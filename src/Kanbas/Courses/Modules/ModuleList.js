@@ -10,6 +10,7 @@ import {
     deleteModule,
     updateModule,
     setModule,
+    collapseModule,
 } from "./modulesReducer";
 
 function ModuleList() {
@@ -17,6 +18,8 @@ function ModuleList() {
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
+
+
 
     return (
         <>
@@ -63,6 +66,8 @@ function ModuleList() {
                                 <small>{module.description}</small>
                             </div>
                             <div class="list-menu">
+                                <button className="btn btn-outline-danger me-1"
+                                    onClick={() => dispatch(collapseModule(module))}>Collapse</button>
                                 <button className="btn btn-danger me-1"
                                     onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
 
@@ -72,7 +77,8 @@ function ModuleList() {
                                 <BiDotsVerticalRounded />
                             </div>
                         </li>
-                        <ModuleSubList />
+                        {module.visible? <ModuleSubList /> : <></>}
+                        
                     </ul>
                 ))}
         </>
