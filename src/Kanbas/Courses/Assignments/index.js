@@ -21,7 +21,8 @@ function Assignments() {
                     </div>
                     <div>
                         <button type="button" className="me-2 btn btn-outline-secondary">+ Group</button>
-                        <button type="button" className="me-2 btn btn-danger">+ Assignment</button>
+                        <Link to={'Create'}><button type="button" className="me-2 btn btn-danger">+ Assignment</button></Link>
+                        
                         <button type="button" className="me-2 btn btn-outline-secondary">
                             <BiDotsVerticalRounded/></button>
                     </div>

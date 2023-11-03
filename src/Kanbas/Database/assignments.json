@@ -2,106 +2,190 @@
     {
         "_id": "A101",
         "title": "Propulsion Assignment",
-        "course": "RS101"
+        "course": "RS101",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A102",
         "title": "Combustion Analysis",
-        "course": "RS101"
+        "course": "RS101",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A103",
         "title": "Nozzle Design Project",
-        "course": "RS101"
+        "course": "RS101",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A201",
         "title": "Aerodynamics Quiz",
-        "course": "RS102"
+        "course": "RS102",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A202",
         "title": "Flow Analysis",
-        "course": "RS102"
+        "course": "RS102",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A203",
         "title": "Heating Analysis",
-        "course": "RS102"
+        "course": "RS102",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A301",
         "title": "Structural Design Task",
-        "course": "RS103"
+        "course": "RS103",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A302",
         "title": "Orbital Calculations",
-        "course": "RS103"
+        "course": "RS103",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A303",
         "title": "Systems Engineering Exam",
-        "course": "RS103"
+        "course": "RS103",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A104",
         "title": "Interplanetary Trajectory Analysis",
-        "course": "RS104"
+        "course": "RS104",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A105",
         "title": "Space Debris Collision Simulation",
-        "course": "RS104"
+        "course": "RS104",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A106",
         "title": "Celestial Mechanics Research Paper",
-        "course": "RS104"
+        "course": "RS104",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A204",
         "title": "Stellar Evolution Observations",
-        "course": "RS105"
+        "course": "RS105",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A205",
         "title": "Galactic Dynamics Analysis",
-        "course": "RS105"
+        "course": "RS105",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A206",
         "title": "Exoplanet Discovery Project",
-        "course": "RS105"
+        "course": "RS105",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A304",
         "title": "Satellite Communication Network Design",
-        "course": "RS106"
+        "course": "RS106",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A305",
         "title": "Deep Space Communication Challenges",
-        "course": "RS106"
+        "course": "RS106",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A306",
         "title": "Quantum Communication Experiment",
-        "course": "RS106"
+        "course": "RS106",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A404",
         "title": "Planetary Geology Fieldwork Report",
-        "course": "RS107"
+        "course": "RS107",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A405",
         "title": "Planetary Atmosphere Study",
-        "course": "RS107"
+        "course": "RS107",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     },
     {
         "_id": "A406",
         "title": "Astrobiology Research Proposal",
-        "course": "RS107"
+        "course": "RS107",
+        "description" : "sample description.",
+        "due_date" : "2023-09-21",
+        "available_from" : "2023-09-01",
+        "available_until" : "2024-09-09"
     }
 ]

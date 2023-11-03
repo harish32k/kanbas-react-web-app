@@ -7,10 +7,12 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import AssignmentCreator from "./Assignments/AssignmentCreator";
 
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    //const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     const { assignmentId } = useParams();
     const assignment = db.assignments.find(
         (assignment) => assignment._id === assignmentId);
@@ -27,20 +29,30 @@ function Courses() {
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><Link to="Home">{courseId + " " + course.name}</Link></li>
                                 <Routes>
-                                <Route path="Home" element={<li class="breadcrumb-item active" aria-current="page">Home</li>} />
-                                <Route path="Modules" element={<li class="breadcrumb-item active" aria-current="page">Modules</li>} />
-                                <Route path="Assignments" element={<li class="breadcrumb-item active" aria-current="page">Assignments</li>} />
-                                <Route
-                                    path="Assignments/:assignmentId"
-                                    element={<>
-                                        <li class="breadcrumb-item" aria-current="page"><Link to={"/Kanbas/Courses/"+courseId+"/Assignments"}>Assignments</Link></li>
-                                        <li class="breadcrumb-item active" aria-current="page">
-                                            Edit Assignment
-                                        </li>
-                                    </>
-                                    }
-                                />
-                                <Route path="Grades" element={<li class="breadcrumb-item active" aria-current="page">Grades</li>} />
+                                    <Route path="Home" element={<li class="breadcrumb-item active" aria-current="page">Home</li>} />
+                                    <Route path="Modules" element={<li class="breadcrumb-item active" aria-current="page">Modules</li>} />
+                                    <Route path="Assignments" element={<li class="breadcrumb-item active" aria-current="page">Assignments</li>} />
+                                    <Route
+                                        path="Assignments/Create"
+                                        element={<>
+                                            <li class="breadcrumb-item" aria-current="page"><Link to={"/Kanbas/Courses/" + courseId + "/Assignments"}>Assignments</Link></li>
+                                            <li class="breadcrumb-item active" aria-current="page">
+                                                Create Assignment
+                                            </li>
+                                        </>
+                                        }
+                                    />
+                                    <Route
+                                        path="Assignments/:assignmentId"
+                                        element={<>
+                                            <li class="breadcrumb-item" aria-current="page"><Link to={"/Kanbas/Courses/" + courseId + "/Assignments"}>Assignments</Link></li>
+                                            <li class="breadcrumb-item active" aria-current="page">
+                                                Edit Assignment
+                                            </li>
+                                        </>
+                                        }
+                                    />
+                                    <Route path="Grades" element={<li class="breadcrumb-item active" aria-current="page">Grades</li>} />
                                 </Routes>
                             </ol>
                         </nav>
@@ -58,6 +70,10 @@ function Courses() {
                             <Route path="Home" element={<Home />} />
                             <Route path="Modules" element={<Modules />} />
                             <Route path="Assignments" element={<Assignments />} />
+                            <Route
+                                path="Assignments/Create"
+                                element={<AssignmentCreator />}
+                            />
                             <Route
                                 path="Assignments/:assignmentId"
                                 element={<AssignmentEditor />}

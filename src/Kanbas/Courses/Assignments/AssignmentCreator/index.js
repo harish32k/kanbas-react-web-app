@@ -10,25 +10,21 @@ import {
     addAssignment,
     deleteAssignment,
     updateAssignment,
-    setAssignment,
     selectAssignment,
 } from "../assignmentsReducer";
 
-function AssignmentEditor() {
-    const { assignmentId } = useParams();
+function AssignmentCreator() {
+    //const { assignmentId } = useParams();
     //const assignment = db.assignments.find((assignment) => assignment._id === assignmentId);
-    //const { courseId } = useParams();
-    const navigate = useNavigate();
 
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     const dispatch = useDispatch();
 
     const { courseId } = useParams();
-
-
-    const handleSave = (assignment) => {
-        dispatch(updateAssignment(assignment));
+    const navigate = useNavigate();
+    const handleSave = () => {
+        dispatch(addAssignment({...assignment,  _id: new Date().getTime(), course: courseId}));
         console.log("Actually saving assignment TBD in later assignments");
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
@@ -41,7 +37,7 @@ function AssignmentEditor() {
 
                     </div>
                     <div class="list-menu">
-                        <FaCircleCheck class="fa-solid fa-circle-check" /> Published
+                        Not published yet
                         <button type="button" class="btn btn-outline-secondary ms-2">
                             <BsThreeDotsVertical />
                         </button>
@@ -76,7 +72,7 @@ function AssignmentEditor() {
                             className="btn btn-outline-secondary me-2">
                             Cancel
                         </Link>
-                        <button onClick={() => handleSave(assignment)} className="btn btn-danger me-2">
+                        <button onClick={handleSave} className="btn btn-danger me-2">
                             Save
                         </button>
 
@@ -89,4 +85,5 @@ function AssignmentEditor() {
 
     );
 }
-export default AssignmentEditor;
+
+export default AssignmentCreator;
