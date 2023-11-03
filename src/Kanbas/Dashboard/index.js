@@ -64,7 +64,9 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                                         </Link>
                                         {/* <a href="/kanbas/home.html">{course.name} SEC 01 Fall 2023 [VTL-2-OL]</a> */}
                                     </h5>
-                                    <span className="card-text text-big-card">{course._id}</span>
+                                    <span className="card-text text-big-card">ID: {course._id} </span>
+                                    <p className="card-text">Number: {course.number} </p>
+                                    
                                     <p className="card-text">
                                         Some quick example text to build on the card
                                         title and make up the bulk of the card's content.</p>
