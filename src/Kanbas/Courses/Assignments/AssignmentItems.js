@@ -12,8 +12,12 @@ import {
     updateAssignment,
     setAssignment,
     selectAssignment,
+    selectAssignments,
 } from "./assignmentsReducer";
-import { Button } from "bootstrap";
+
+import * as client from "./client";
+import { useEffect } from "react";
+
 
 function formatDate(inputDate) {
     const date = new Date(inputDate);
@@ -21,12 +25,29 @@ function formatDate(inputDate) {
     return date.toLocaleDateString('en-US', options);
 }
 
+
+
 function AssignmentItems() {
     const { courseId } = useParams();
 
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     const dispatch = useDispatch();
+
+    
+    const handleDeleteAssignment = (assignmentId) => {
+        client.deleteAssignment(assignmentId).then((status) => {
+            dispatch(deleteAssignment(assignmentId));
+        });
+    };
+
+
+    useEffect(() => {
+        client.findAssignmentsForCourse(courseId)
+            .then((assignments) =>
+                dispatch(selectAssignments(assignments))
+            );
+    }, [courseId]);
 
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
@@ -55,7 +76,7 @@ function AssignmentItems() {
                     </p>
                 </div>
                 <div class="list-menu">
-                    <button class="btn btn-danger me-2" onClick={() => dispatch(deleteAssignment(assignment._id))}>Delete</button>
+                    <button class="btn btn-danger me-2" onClick={() => handleDeleteAssignment(assignment._id)}>Delete</button>
                     <FaCircleCheck className="fa-solid fa-circle-check me-1" />
                     <FaEllipsisVertical />
                 </div>

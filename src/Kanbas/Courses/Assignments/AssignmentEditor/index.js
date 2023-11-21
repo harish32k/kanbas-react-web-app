@@ -14,6 +14,8 @@ import {
     selectAssignment,
 } from "../assignmentsReducer";
 
+import * as client from "../client";
+
 function AssignmentEditor() {
     const { assignmentId } = useParams();
     //const assignment = db.assignments.find((assignment) => assignment._id === assignmentId);
@@ -26,9 +28,14 @@ function AssignmentEditor() {
 
     const { courseId } = useParams();
 
+    const handleUpdateAssignment = async (assignment) => {
+        const status = await client.updateAssignment(assignment);
+        dispatch(updateAssignment(assignment));
+    };
+
 
     const handleSave = (assignment) => {
-        dispatch(updateAssignment(assignment));
+        handleUpdateAssignment(assignment);
         console.log("Actually saving assignment TBD in later assignments");
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };

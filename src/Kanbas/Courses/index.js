@@ -8,11 +8,29 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import AssignmentCreator from "./Assignments/AssignmentCreator";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function Courses({ courses }) {
     const { courseId } = useParams();
     //const course = db.courses.find((course) => course._id === courseId);
-    const course = courses.find((course) => course._id === courseId);
+    //const course = courses.find((course) => course._id === courseId);
+
+    //const API_BASE = "https://kanbas-node-server-app-6ntb.onrender.com";
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL = API_BASE + "/api/courses";
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
+
     const { assignmentId } = useParams();
     const assignment = db.assignments.find(
         (assignment) => assignment._id === assignmentId);

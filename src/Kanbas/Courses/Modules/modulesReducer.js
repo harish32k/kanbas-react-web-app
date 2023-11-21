@@ -1,8 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import db from "../../Database";
+// const initialState = {
+//     modules: db.modules.map((item) => ({...item, visible: true}) ),
+//     module: { name: "New Module 123", description: "New Description", visible: true },
+// };
+
 const initialState = {
-    modules: db.modules.map((item) => ({...item, visible: true}) ),
-    module: { name: "New Module 123", description: "New Description", visible: true },
+    modules: [],
+    module: { name: "New Module 123", description: "New Description", visible: false },
 };
 
 const modulesSlice = createSlice({
@@ -33,10 +38,13 @@ const modulesSlice = createSlice({
         setModule: (state, action) => {
             state.module = action.payload;
         },
+        setModules: (state, action) => {
+            state.modules = action.payload;
+        },
         collapseModule: (state, action) => {
             state.modules = state.modules.map((module) => {
                 if (module._id === action.payload._id) {
-                    return {...module, visible: !module.visible};
+                    return { ...module, visible: !module.visible };
                 } else {
                     return module;
                 }
@@ -46,11 +54,11 @@ const modulesSlice = createSlice({
         collapseAll: (state, action) => {
             console.log("test");
             state.modules = state.modules.map((module) => {
-                return {...module, visible: false};
+                return { ...module, visible: false };
             });
         }
     },
 });
 export const { addModule, deleteModule,
-    updateModule, setModule, collapseModule, collapseAll } = modulesSlice.actions;
+    updateModule, setModule, collapseModule, collapseAll, setModules } = modulesSlice.actions;
 export default modulesSlice.reducer;

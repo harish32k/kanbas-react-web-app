@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { BiDotsVerticalRounded } from "react-icons/bi"
@@ -11,13 +11,41 @@ import {
     updateModule,
     setModule,
     collapseModule,
+    setModules
 } from "./modulesReducer";
+
+import * as client from "./client";
 
 function ModuleList() {
     const { courseId } = useParams();
     const modules = useSelector((state) => state.modulesReducer.modules);
+    
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules.map((item) => ({...item, visible: true}))))
+            );
+    }, [courseId]);
+
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
 
 
 
@@ -40,10 +68,10 @@ function ModuleList() {
                         </div>
                         <div className="d-flex">
                             <button className="btn btn-success me-1"
-                                onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+                                onClick={handleAddModule}>
                                 Add</button>
                             <button className="btn btn-outline-info"
-                                onClick={() => dispatch(updateModule(module))}>Update</button>
+                                onClick={() => handleUpdateModule(module)}>Update</button>
                         </div>
 
                     </div>
@@ -69,7 +97,7 @@ function ModuleList() {
                                 <button className="btn btn-outline-danger me-1"
                                     onClick={() => dispatch(collapseModule(module))}>Collapse</button>
                                 <button className="btn btn-danger me-1"
-                                    onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                                    onClick={() => handleDeleteModule(module._id)}>Delete</button>
 
                                 <button className="btn btn-success"
                                     onClick={() => dispatch(setModule(module))}>Update</button>
@@ -77,8 +105,8 @@ function ModuleList() {
                                 <BiDotsVerticalRounded />
                             </div>
                         </li>
-                        {module.visible? <ModuleSubList /> : <></>}
-                        
+                        {module.visible ? <ModuleSubList /> : <></>}
+
                     </ul>
                 ))}
         </>

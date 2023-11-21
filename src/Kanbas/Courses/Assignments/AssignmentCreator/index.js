@@ -12,6 +12,7 @@ import {
     updateAssignment,
     selectAssignment,
 } from "../assignmentsReducer";
+import * as client from "../client";
 
 function AssignmentCreator() {
     //const { assignmentId } = useParams();
@@ -23,8 +24,17 @@ function AssignmentCreator() {
 
     const { courseId } = useParams();
     const navigate = useNavigate();
+
+    const handleCreateAssignment = () => {
+        client.createAssignment(courseId, assignment).then((assignment) => {
+            dispatch(addAssignment(assignment));
+        });
+    };
+
+
     const handleSave = () => {
-        dispatch(addAssignment({...assignment,  _id: new Date().getTime(), course: courseId}));
+        //dispatch(addAssignment({...assignment,  _id: new Date().getTime(), course: courseId}));
+        handleCreateAssignment();
         console.log("Actually saving assignment TBD in later assignments");
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
