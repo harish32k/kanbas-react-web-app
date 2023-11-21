@@ -9,7 +9,8 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
     });
-    const API_BASE = "https://kanbas-node-server-app-6ntb.onrender.com"
+    //const API_BASE = "https://kanbas-node-server-app-6ntb.onrender.com";
+    const API_BASE = process.env.REACT_APP_API_BASE;
     const URL = API_BASE+"/a5/assignment";
     const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
