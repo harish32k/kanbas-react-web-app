@@ -6,7 +6,7 @@ import WorkingWithObjects from "./WorkingWithObjects";
 function Assignment5() {
     //const API_BASE = "https://kanbas-node-server-app-6ntb.onrender.com";
     const API_BASE = process.env.REACT_APP_API_BASE;
-    //console.log("Here " + API_BASE);
+    console.log("Here " + API_BASE);
     return (
         <div>
             <h1>Assignment 5</h1>
